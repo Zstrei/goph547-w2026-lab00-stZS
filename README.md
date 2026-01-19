@@ -1,5 +1,6 @@
 # goph547-w2026-lab00-stZS
 
+
 # GOPH 547
 
 *Semester:* W2026
@@ -10,4 +11,5 @@ Includes examples using Numpy arrays and Matplotlib for
 visulization.
 
 HELLO HELLO
+
 
