@@ -30,3 +30,6 @@ def arrays():
     # Question B1
     C = np.ones((3, 5))
     print(f"(3, 5) array of ones\n{C}")
+
+if __name__ == '__main__':
+    arrays()
