@@ -24,7 +24,7 @@ def arrays():
     print()
 
     # Question B3
-    odd_col = np.arange(45, 75, 2).reshape(-1, 1)
+    odd_col = np.arange(45, 77, 2).reshape(-1, 1)
     print("Question B3: Column vector of odd numbers between 44 and 75")
     print(odd_col)
     print()
@@ -69,7 +69,7 @@ def arrays():
     print()
 
     # Question B10
-    img_array = np.asarray(Image.open('rock_canyon.jpg'))
+    img_array = np.asarray(Image.open('examples/rock_canyon.jpg'))
     print("Question B10: Loaded rock_canyon image")
     print(f"Image shape: {img_array.shape}")
     print()
@@ -81,7 +81,7 @@ def arrays():
     print()
 
     # Question B12
-    gray_img = np.asarray(Image.open("rock_canyon.jpg").convert("L"))
+    gray_img = np.asarray(Image.open("examples/rock_canyon.jpg").convert("L"))
     print("Question B12: Grayscale image loaded with PIL")
     print(f"Grayscale image shape: {gray_img.shape}")
     print()
@@ -144,9 +144,13 @@ def arrays():
     print()
 
     #Question B16
-    plt.tight_layout()
-    plt.savefig("rock_canyon_RGB_summary.png")
-    print('Question 16: Saved RGB summary image in examples folder')
+    
+    fig.tight_layout()
+    fig.savefig("rock_canyon_RGB_summary.png", dpi=200, bbox_inches="tight")
+    plt.show()
+    plt.close(fig)
+    print("Question 16: Saved RGB summary image in examples folder")
+
 
 
 if __name__ == '__main__':
